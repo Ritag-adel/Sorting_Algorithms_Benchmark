@@ -3,7 +3,7 @@
 ## Personal Information
 - **Name:** رتاج عادل الترهوني 
 - **Student ID:** 3166279
-- **Section / Group:** Aلا
+- **Section / Group:** B
 
 ## Project Description
 This project compares the performance of 5 sorting algorithms on an array of size **N = 100,000**.
@@ -26,4 +26,4 @@ This project compares the performance of 5 sorting algorithms on an array of siz
 - The original array is copied before each test using `Arrays.copyOf`
 - Only sorting time is measured (not array creation)
 
-## How to Run
+
