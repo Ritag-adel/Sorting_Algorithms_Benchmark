@@ -1,20 +1,29 @@
-# Sorting_Algorithms_Benchmark
-Ritage Adel altarhoney 3166279
-Sorting-Algorithms-Benchmark
-1. Student Information
-Name: عبدالحميد جلال باباني__
-University ID: 3167052__________
-Section: A________
-2. Description
-A Java program that measures the execution time (in microseconds, using System.nanoTime()) of five sorting algorithms (Selection, Insertion, Bubble, Merge, Quick) on arrays of N = 100,000 integers in four cases: Random, Reversed, Partially Sorted (~80%), and Fully Sorted. Each algorithm runs on an independent copy of the data, and only the sorting time is measured (copying is excluded).
+# Sorting Algorithms Benchmark
 
-Run it with: javac SortingBenchmark.java && java SortingBenchmark
+## Personal Information
+- **Name:** رتاج عادل الترهوني 
+- **Student ID:** 3166279
+- **Section / Group:** Aلا
 
-3. Results (microseconds)
-Algorithm	Random	Reversed	Partially Sorted	Fully Sorted
-Selection Sort	3,523,390	3,202,959	1,869,560	1,867,633
-Insertion Sort	1,620,037	3,250,266	130,708	95
-Bubble Sort	16,172,723	8,046,609	7,226,092	29
-Merge Sort	63,858	32,195	8,747	8,017
-Quick Sort	13,502	2,997,858	6,242	3,797,811
-Exact values vary from one machine/run to another; the trends stay the same.
+## Project Description
+This project compares the performance of 5 sorting algorithms on an array of size **N = 100,000**.
+
+### Algorithms
+| Complexity | Algorithms |
+|---|---|
+| O(N²) | Selection Sort, Insertion Sort, Bubble Sort |
+| O(N log N) | Merge Sort, Quick Sort |
+
+### Test Cases
+1. **Random** – unsorted random numbers  
+2. **Reverse** – sorted from largest to smallest  
+3. **Partial** – about 80% sorted  
+4. **Sorted** – fully sorted ascending  
+
+### Timing Method
+- Time is measured using `System.nanoTime()`
+- Result is converted to microseconds: `(end - start) / 1000`
+- The original array is copied before each test using `Arrays.copyOf`
+- Only sorting time is measured (not array creation)
+
+## How to Run
